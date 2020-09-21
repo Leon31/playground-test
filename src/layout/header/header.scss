@@ -1,0 +1,47 @@
+.navbar {
+  position: fixed;
+  width: 100vw;
+  padding: 25px 10vw;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  transition: .5s all ease;  
+}
+
+.navbar--scroll {
+  background: $primary;
+  padding: 15px 10vw 10px 10vw;
+}
+
+.navbar_logo {
+  padding: 10px 0px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.navbar_menu {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px 0px;
+}
+
+.menu_item {
+  color: $secondary;
+  cursor: pointer;
+}
+
+.menu_item:active,
+.menu_item:focus,
+.menu_item:hover {
+  border-bottom: 2px solid $secondary;
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar_logo {
+    align-self: center;
+  }
+}

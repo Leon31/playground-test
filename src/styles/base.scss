@@ -18,3 +18,51 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+button {
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+input,
+textarea {
+  background: $primary;
+  color: $secondary;
+  border: 1px solid $secondary;
+  font-size: 1rem;
+  padding: 14px 21px;
+  margin: 7px 0px;
+  resize: none;
+  width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $secondary;
+  opacity: .3;
+}
+
+textarea,
+textarea::placeholder {
+  font-family: 'Gotham', 'Avenir', 'Helvetica', sans-serif;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 65px;
+  margin: 5px 0 25px 0;
+}
+
+h1::after {
+  content: ".";
+}
