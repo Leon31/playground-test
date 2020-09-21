@@ -1,0 +1,21 @@
+.btn_primary--light {
+  background: $secondary;
+  color: $primary;
+}
+
+.btn_primary--dark {
+  background: $primary;
+  color: $secondary;
+}
+
+.btn_secondary--light {
+  background: $secondary;
+  color: $primary;
+  border: 1px solid $primary;
+}
+
+.btn_secondary--dark {
+  background: $primary;
+  color: $secondary;
+  border: 1px solid $secondary;
+}
