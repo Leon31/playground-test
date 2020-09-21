@@ -1,0 +1,49 @@
+.cards {
+  column-gap: 30px;
+  padding: 60px 10vw;
+  background: #ebebeb;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card--1 .card_image {
+  background-size: 140%;
+}
+
+.card--2 .card_image {
+  background-position: 10%;
+  background-size: 140%;
+}
+
+.card--3 .card_image {
+  background-size: cover;
+}
+
+.card_image {
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-basis: 100px;
+}
+
+.card_conntent {
+  text-align: center;
+  padding: 30px 48px;
+  line-height: 24px;
+  font-size: 1.15rem;
+  background: $secondary;
+  flex:5;
+}
+
+.card_button {
+  flex-basis: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+  .cards {
+    row-gap: 30px;
+  }
+}
