@@ -3,6 +3,7 @@ import Slider from '../../components/slider';
 import Cards from '../../components/cards';
 import Banners from '../../components/banners';
 import Tabs from '../../components/tabs';
+import Contacts from '../../components/contacts';
 
 function Main () {
   return (
@@ -11,6 +12,7 @@ function Main () {
       <Cards/>
       <Banners/>
       <Tabs/>
+      <Contacts/>
     </div>
   );
 }
