@@ -1,0 +1,21 @@
+.cookies {
+  position: fixed;
+  bottom: 0;
+  background: $secondary;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  z-index: 11;
+  padding: 5px;
+  align-items: center;
+}
+
+.cookies_message {
+  font-size: 0.8rem;
+  padding: 0px 20px;
+}
+
+.cookies_button {
+  margin: 5px 5px;
+  padding: 8px 45px;
+}
