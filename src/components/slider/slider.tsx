@@ -1,6 +1,7 @@
 import React from 'react';
 import Gallereact from 'gallereact';
 import { isMobile } from 'react-device-detect';
+import Revealer from '../../utils/revealer';
 
 import slide1 from '../../assets/images/slide-circle.jpg';
 import slide2 from '../../assets/images/slide-hello.jpg';
@@ -8,15 +9,17 @@ import slide3 from '../../assets/images/slide-play.jpg';
 
 function Slider () {
   return (
-    <div className="slider">
-      <Gallereact 
-        images={images}
-        autoPlay={true}
-        duration={5000}
-        displayArrow={!isMobile}
-        swipe={isMobile}
-        {...styles}/>
-    </div>
+    <Revealer revealIn="zoomImageIn" revealOut="zoomed">
+      <div className="slider">
+        <Gallereact 
+          images={images}
+          autoPlay={true}
+          duration={5000}
+          displayArrow={!isMobile}
+          swipe={isMobile}
+          {...styles}/>
+      </div>
+    </Revealer>
   );
 }
 
@@ -48,7 +51,7 @@ const styles = {
     alignContent: "center",
     height: "100%",
     width: "50%",
-    minWidth: "400px",
+    minWidth: "550px",
     padding: "0 15%",
   },
   titleStyle: {

@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import logo from '../../assets/images/logo-playground-white.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+
+import logo from '../../assets/images/logo-playground-white.png';
 
 function Header () {
   const [pageScroll, setPageScroll] = useState(false);

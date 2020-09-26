@@ -1,4 +1,5 @@
 import React from 'react';
+import Revealer from "../../utils/revealer";
 
 import innovationImg from '../../assets/images/card-innovation.png';
 import playHarderImg from '../../assets/images/card-play-harder.png';
@@ -27,15 +28,17 @@ type CardProps = {
 
 function Card ({ image, content, num }:CardProps) {
   return (
-    <div className={`col-span-4 card card--${num}`}>
-      <div className="card_image" style={{backgroundImage: `url(${image})`}}></div>
-      <div className="card_conntent">
-        <p>{content}</p>
+    <Revealer revealIn="fadeInUp" revealOut="fadeOut">
+      <div className={`col-span-4 card card--${num}`}>
+        <div className="card_image" style={{backgroundImage: `url(${image})`}}></div>
+        <div className="card_conntent">
+          <p>{content}</p>
+        </div>
+        <button className="card_button btn_primary--dark">
+          read more
+        </button>
       </div>
-      <button className="card_button btn_primary--dark">
-        read more
-      </button>
-    </div>
+    </Revealer>
   );
 }
 

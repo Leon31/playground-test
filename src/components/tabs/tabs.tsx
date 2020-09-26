@@ -34,37 +34,11 @@ function Tabs () {
           ? (<div className="contnet_loader">
               <img className="loader spin" src={loader} alt=""/>
             </div>)
-          : <p className="contnet_text"> {data?.item.content} </p> 
+          : <p className="contnet_text fadeIn"> {data?.item.content} </p> 
         }
       </div>
     </div>
   )
-  // return (
-  //   <div className="tabs grid grid-col-12">
-  //     <div className="tabs_options col-span-4">
-  //       <div className={"option" + (current === 'tab1' ? " option--active" : '')} 
-  //         onClick={()=>setCurrent('tab1')}>
-  //         Vestibulum at odio sit amet <span className="fa fa-chevron-up"> </span>
-  //       </div>
-  //       <div className={"option" + (current === 'tab2' ? " option--active" : '')} 
-  //         onClick={()=>setCurrent('tab2')}>
-  //         Sed vehicula neque <span className="fa fa-chevron-up"> </span>
-  //       </div>
-  //       <div className={"option" + (current === 'tab3' ? " option--active" : '')} 
-  //         onClick={()=>setCurrent('tab3')}>
-  //         Nulla id libero pretium <span className="fa fa-chevron-up"> </span>
-  //       </div>
-  //     </div>
-  //     <div className="tabs_contnet col-span-8 grid grid-col-8">
-  //       {status === "fetching"
-  //         ? (<div className="contnet_loader">
-  //             <img className="loader spin" src={loader} alt=""/>
-  //           </div>)
-  //         : <p className="contnet_text"> {data?.item.content} </p> 
-  //       }
-  //     </div>
-  //   </div>
-  // )
 } 
 
 export default Tabs;
