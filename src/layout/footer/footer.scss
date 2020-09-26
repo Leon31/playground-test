@@ -1,0 +1,39 @@
+.footer {
+  background: $primary;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_logo {
+  padding: $base-space*2 0px;
+  flex: 1;
+  margin: $base-space*2 auto;
+}
+
+.footer_menu {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  height: 2.5vh;
+  width: 40vw;
+  margin: $base-space*3 auto;
+}
+
+.footer_social {
+  color: $secondary;
+  opacity: .3;
+  margin: $base-space*2 auto;
+  margin-bottom: $base-space*4;
+  flex: 1;
+  > * {
+    margin: $base-space*2;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer_menu {
+    width: 80vw;
+  }
+}
