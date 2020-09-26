@@ -6,16 +6,16 @@
   display: flex;
   justify-content: center;
   z-index: 11;
-  padding: 5px;
+  padding: $base-space;
   align-items: center;
 }
 
 .cookies_message {
   font-size: 0.8rem;
-  padding: 0px 20px;
+  padding: 0px $base-space*3;
 }
 
 .cookies_button {
-  margin: 5px 5px;
-  padding: 8px 45px;
+  margin: $base-space $base-space;
+  padding: $base-space $base-space*7;
 }

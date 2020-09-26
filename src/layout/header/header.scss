@@ -1,7 +1,7 @@
 .navbar {
   position: fixed;
   width: 100vw;
-  padding: 25px 10vw;
+  padding: $base-space*3 10vw;
   display: flex;
   justify-content: space-between;
   z-index: 10;
@@ -10,11 +10,11 @@
 
 .navbar--scroll {
   background: $primary;
-  padding: 15px 10vw 10px 10vw;
+  padding: $base-space*2 10vw $base-space 10vw;
 }
 
 .navbar_logo {
-  padding: 10px 0px;
+  padding: $base-space 0px;
   flex: 1;
   cursor: pointer;
 }
@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-between;
   flex: 1;
-  padding: 10px 0px;
+  padding: $base-space 0px;
 }
 
 .menu_item {

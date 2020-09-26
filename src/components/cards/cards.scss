@@ -1,6 +1,6 @@
 .cards {
-  column-gap: 30px;
-  padding: 60px 10vw;
+  column-gap: $base-space*4;
+  padding: $base-space*9 10vw;
   background: #ebebeb;
 }
 
@@ -26,24 +26,24 @@
 .card_image {
   background-position: center;
   background-repeat: no-repeat;
-  flex-basis: 100px;
+  flex-basis: $base-space*15;
 }
 
 .card_conntent {
   text-align: center;
-  padding: 30px 48px;
-  line-height: 24px;
+  padding: $base-space*4 $base-space*7;
+  line-height: $base-space*3;
   font-size: 1.15rem;
   background: $secondary;
   flex:5;
 }
 
 .card_button {
-  flex-basis: 50px;
+  flex-basis: $base-space*7;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
   .cards {
-    row-gap: 30px;
+    row-gap: $base-space*4;
   }
 }

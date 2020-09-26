@@ -1,34 +1,34 @@
 .contacts {
-  column-gap: 30px;
-  padding: 60px 10vw;
+  column-gap: $base-space*4;
+  padding: $base-space*9 10vw;
   background: $primary;
   color: $secondary;
 }
 
 .contacts_headline {
   grid-column-start: 2;
-  height: 300px;
+  height: $base-space*43;
 }
 
 .headline_text {
-  line-height: 21px;
+  line-height: $base-space*3;
 }
 
 .contacts_form {
-  column-gap: 30px;
+  column-gap: $base-space*4;
   grid-column-start: 6;
 }
 
 .form_button {
-  padding: 10px 10px;
-  margin: 7px 0;
+  padding: $base-space*2 $base-space*2;
+  margin: $base-space 0;
 
   span {
     font-size: 12px;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
   .contacts_form {
     grid-column-start: 1;
   }

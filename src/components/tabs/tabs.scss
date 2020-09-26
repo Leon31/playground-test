@@ -1,22 +1,22 @@
 .tabs {
-  padding: 60px 10vw;
+  padding: $base-space*9 10vw;
   background: #ebebeb;
-  min-height: 50vh;
+  min-height: 350px;
   row-gap: 1px;
 }
 
 .option {
-  height: 60px;
+  height: $base-space*8;
   background: #ccc;
   color: $primary;
-  padding: 20px 40px;
+  padding: $base-space*3 $base-space*5;
   margin-bottom: 1px;
   transition: all 0s;
   
   span {
     font-size: 11px;
-    margin-left: 7px;
-    transition: all .4s;
+    margin-left: $base-space;
+    transition: color 0s, transform .4s;
   }
 }
 
@@ -27,7 +27,7 @@
   transition: all .4s;
 
   span {
-    rotate: 180deg;
+    transform: rotate(180deg);
   }
 }
 
@@ -49,14 +49,13 @@
 .tabs_contnet {
   grid-column: 5 / 13;
   background: $secondary;
-  column-gap: 30px;
-  padding: 30px 0;
+  column-gap: $base-space*4;
+  padding: $base-space*4 0;
   order: 4;
 }
 
 .contnet_text {
   grid-column: 2 / span 6;
-  align-self: center;
 }
 
 .contnet_loader {
@@ -81,9 +80,13 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
   .tabs_contnet {
     grid-column: auto;
     grid-row: auto;
+  }
+
+  .contnet_loader {
+    padding: 200px 0;
   }
 }

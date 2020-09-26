@@ -34,8 +34,8 @@ textarea {
   color: $secondary;
   border: 1px solid $secondary;
   font-size: 1rem;
-  padding: 14px 21px;
-  margin: 7px 0px;
+  padding: $base-space*2 $base-space*3; 
+  margin: $base-space 0px;
   resize: none;
   width: 100%;
 }
@@ -59,10 +59,20 @@ a {
 h1 {
   font-size: 5rem;
   font-weight: 900;
-  line-height: 65px;
-  margin: 5px 0 25px 0;
+  line-height: $base-space*9;
+  margin: $base-space 0 $base-space*3 0;
 }
 
 h1::after {
   content: ".";
+}
+
+@media only screen and (min-width: 400px) and (max-width: 1024px) {
+  :root {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
 }
